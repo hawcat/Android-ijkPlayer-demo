@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.ijkplayermd.MainActivity">
+
+    <!--主界面的三个按钮和一个播放控件-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="播放本地视频"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnPause"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="暂停"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/startPlay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="播放网络视频"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+    <!--VideoView 作为视频播放时的显示位置-->
+    <VideoView
+        android:id="@+id/vdvwFilm"
+        android:layout_width="match_parent"
+        android:layout_height="253dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="视频详情：\n iOS15.5正式版已推送，是否值得升级？续航、发热发烫问题是否有改善？真实体验告诉你！  视频工具下载及教程：https://www.tenorshare.cn/products/reiboot.html?bilibili-tscn \n =================================\n 本Android视频播放器基于跟Bilibili同款的开源ijkPlayer播放器，并且同时具有播放本地视频和网络视频的功能，在Weight.Media和SysUtils中封装了各种系统参数调节函数，可以调节亮度，音量等功能 \n更多参考https://www.hawcat.cn"></TextView>
+
+
+
+
+
+</LinearLayout>
+
+
